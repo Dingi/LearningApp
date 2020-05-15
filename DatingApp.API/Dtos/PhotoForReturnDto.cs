@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DatingApp.API.Dtos
 {
-    public class PhotoFroReturnDto
+    public class PhotoForReturnDto
     {
         public int Id { get; set; }
         public string URL { get; set; }
