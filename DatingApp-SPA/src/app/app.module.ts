@@ -6,6 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BsDropdownModule} from 'ngx-bootstrap/dropdown';
 import { TabsModule} from 'ngx-bootstrap/tabs';
 import { NgxGalleryModule } from '@kolkov/ngx-gallery';
+import { FileUploadModule } from 'ng2-file-upload';
 
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
@@ -28,6 +29,7 @@ import { MemberEditResolver } from './_resolvers/member-edit.resolver';
 import { AuthGuard } from './_guards/auth.guard';
 import { PreventUnsavedChanges } from './_guards/prevent-unsaved-changes.guard';
 import { PhotoEditorComponent } from './members/photo-editor/photo-editor.component';
+
 
 
 export function TokenGetter(){
@@ -61,6 +63,7 @@ export class CustomHammerConfig extends HammerGestureConfig  {
       FormsModule,
       BrowserAnimationsModule,
       NgxGalleryModule,
+      FileUploadModule,
       TabsModule.forRoot(),
       BsDropdownModule.forRoot(),
       RouterModule.forRoot(appRoutes),
